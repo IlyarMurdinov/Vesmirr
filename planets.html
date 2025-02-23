@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Planety</title>
+    <link rel="stylesheet" href="planety.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Vesmír</a>
+        <nav>
+            <a href="Vesmír.html">Home</a>
+            <a href="planets.html" target="_blank">Planety</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </nav>
+        <a href="#" class="action_btn">Začít</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="Vesmír.html">Home</a></li>
+            <li><a href="planets.html" target="_blank">Planety</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="action_btn">Začít</a></li>
+        </div>
+    </header>
+    <hr>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+        
+
+    </script> 
+    
+    <main>
+    <div class="banner">
+        <div class="slider" style="--quantity: 9">
+            <div class="item" style="--position: 1"><img src="https://wallpapercat.com/w/full/f/7/5/88263-1440x2560-phone-hd-mercury-background-photo.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="https://w0.peakpx.com/wallpaper/769/572/HD-wallpaper-venus-hottest-planet.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="https://mobcup.eu/king-include/uploads/2024/05/621985-earth-wallpaper-4k.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="https://mrwallpaper.com/images/hd/mars-4k-detailed-ccn9a2cd4ekvto8c.jpgg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="https://img.freepik.com/premium-photo/planet-jupiter-planet-solar-system_1336671-56704.jpg?w=360" alt=""></div>
+            <div class="item" style="--position: 6"><img src="https://i.pinimg.com/736x/31/dc/3c/31dc3c5ebe2a0bf25ee6d0e455dd5b86.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="https://w0.peakpx.com/wallpaper/76/659/HD-wallpaper-uranus-galaxy-nasa-grapher-planets.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="https://w0.peakpx.com/wallpaper/739/301/HD-wallpaper-neptune-apple-ipad-planet-space.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="https://w0.peakpx.com/wallpaper/882/171/HD-wallpaper-pluto-dark-black-planets-space-nasa-star-earth-abstract-thumbnail.jpg" alt=""></div>
+        </div>
+    </div>
+    <hr>
+    <section class="box">
+        <h1>Merkur</h1>
+        <table>
+            <li>
+                <ol>Poloha a velikost:  
+            Merkur je nejbližší planeta ke Slunci, obíhá ve vzdálenosti asi 58 milionů kilometrů.  
+            Je nejmenší planetou Sluneční soustavy, s průměrem přibližně 4 880 km, což je méně než polovina průměru Země.
+        </ol>
+            
+            <ol>Doba oběhu a rotace:  
+            Jeden oběh kolem Slunce (Merkurův rok) trvá jen 88 pozemských dní.  
+            Rotace je velmi pomalá – jeden den na Merkuru trvá 59 pozemských dní.</ol>
+            
+            <ol>Teplotní extrémy:  
+            Kvůli absenci atmosféry jsou teploty na Merkuru extrémní:  
+            Přes den až +430 °C.  
+            V noci klesají až na -180 °C.</ol>
+            
+            <ol>Povrch:  
+            Povrch Merkuru je pokryt krátery, podobně jako Měsíc.  
+            Největší kráter se jmenuje Caloris Basin a má průměr přes 1 500 km.  
+            Nacházejí se zde i hladké planiny a hřebeny, které vznikly při chladnutí a smršťování planety.</ol>
+            
+            <ol>Atmosféra:  
+            Merkur nemá prakticky žádnou atmosféru, pouze velmi tenkou exosféru tvořenou atomy kyslíku, sodíku, vodíku a dalších prvků.  
+            To znamená, že povrch planety není chráněn před dopadem meteoritů ani před slunečním větrem.</ol>
+            
+            <ol>Zajímavosti o Merkuru
+            Merkur má velmi eliptickou dráhu, což znamená, že jeho vzdálenost od Slunce se výrazně mění.  
+            Gravitační síla na Merkuru je jen asi 38 % gravitace na Zemi.  
+            Zajímavým jevem je tzv. sluneční dvojí východ, kdy na určitých místech Slunce vychází, zapadá a pak znovu vychází během jednoho dne.
+        </ol>
+        </li>
+        </table> 
+    </h3>
+    </section>
+    <section class="box">
+        <h1>Venuše</h1>
+        <table>
+            <li>
+            <ol>
+            Venuše je druhá planeta od Slunce a jeden z nejjasnějších objektů na obloze, často nazývaná “Jitřenka” nebo 
+            “Večernice” podle toho, kdy je viditelná.
+            </ol>
+            <ol>
+		Hustota a složení: Skládá se z kovového jádra, kamenného pláště a má atmosféru tvořenou hlavně oxidem uhličitým.
+            </ol>
+            <ol>
+            Atmosféra:
+            Atmosféra je extrémně hustá a tvoří ji především oxid uhličitý (96,5 %).
+		Tlak na povrchu je přibližně 92krát vyšší než na Zemi, což odpovídá tlaku 1 km pod hladinou oceánu.
+		Obsahuje mraky kyseliny sírové, které odrážejí sluneční světlo a dávají planetě její vysokou jasnost.
+            </ol>
+            <ol>
+            Teplota:
+            Povrchová teplota je v průměru 465 °C, což z Venuše dělá nejteplejší planetu sluneční 
+            soustavy – i teplejší než Merkur. Je to způsobeno silným skleníkovým efektem.
+            </ol>
+            <ol>
+            Rotace a oběh:
+            Rotuje velmi pomalu – jeden den na Venuši trvá 243 pozemských dní.
+            Zajímavostí je, že rotace je retrográdní – to znamená, že rotuje opačným směrem než 
+            většina planet (východ-západ místo západ-východ).
+	Jeden oběh kolem Slunce trvá 225 dní, takže den na Venuši je delší než její rok.
+            </ol>
+            <ol>
+            Možnost života:
+            Hustá a žhavá atmosféra neumožňuje život, jak ho známe. Nicméně v horních vrstvách atmosféry, kde jsou 
+            podmínky mírnější, byla objevena možná přítomnost fosfanu, 
+            což by mohlo naznačovat existenci mikrobiálního života.
+            </ol>
+        </li>
+            </table>
+        
+    </section>
+    <section class="box" id="box-1">
+        <h1>Země</h1>
+        <table>
+            <li>
+            <ol>
+                Země je třetí planeta od Slunce a jediná známá planeta, na které existuje život. 
+                Je naším domovem a jedním z nejstudovanějších objektů ve vesmíru.
+            </ol>
+            <ol>
+            Povrch:
+            Rozdělení plochy: Přibližně 71 % povrchu tvoří oceány, zbytek pevnina.
+            Kontinenty: Sedm hlavních – Afrika, Antarktida, Asie, Austrálie, Evropa, Jižní Amerika, Severní Amerika.
+	Nejvyšší bod: Mount Everest (8 848,86 m).
+    Nejhlubší místo: Mariánský příkop (přibližně 11 034 m).
+            </ol>
+            <ol>
+            Atmosféra:
+            Tvořena převážně dusíkem (78 %) a kyslíkem (21 %), zbytek tvoří argon, oxid uhličitý a další plyny.
+            Chrání planetu před škodlivým slunečním zářením a vesmírnými objekty díky vrstvě ozonu.
+            Umožňuje existenci života díky stabilním teplotám a koloběhu vody.
+            </ol>
+            <ol>
+            Měsíc:
+            Země má jeden přirozený satelit – Měsíc, který stabilizuje její osu rotace a ovlivňuje přílivy a odlivy.
+            Průměr Měsíce je 3 474 km, což z něj činí pátý největší měsíc ve sluneční soustavě.
+            </ol>
+            <ol>
+            Rotace a oběh:
+            Země rotuje kolem své osy za 24 hodin, což způsobuje střídání dne a noci.
+            Obíhá kolem Slunce za 365,25 dne, proto máme přestupné roky.
+            Osa rotace je nakloněná o 23,5°, což způsobuje střídání ročních období.
+            </ol>
+            <ol>
+            Život na Zemi:
+            Země je zatím jediná známá planeta, kde existuje život. Je to díky kombinaci faktorů, jako jsou stabilní teploty, voda v kapalném stavu, atmosféra a magnetické pole.
+            Život na Zemi existuje již více než 3,5 miliardy let.
+            </ol>
+        </li>
+            </table>
+        </section>
+
+    <section class="box">
+        <h1>Mars</h1>
+        <table>
+            <li>
+                <ol>
+                    Mars je čtvrtá planeta od Slunce a často je nazýván “rudou planetou” kvůli svému charakteristickému 
+                    červenému zabarvení způsobenému oxidem železa na povrchu. Je to jedna z nejvíce zkoumaných planet ve sluneční soustavě, 
+                    protože by mohla hostit život nebo být budoucím cílem lidské kolonizace.
+                </ol>
+            <ol>
+            Povrch:
+Červená díky oxidu železa (rez).
+Mars má nejvyšší sopku ve sluneční soustavě, Olympus Mons, která je vysoká přibližně 21 km.
+Valles Marineris, jeden z největších kaňonů ve sluneční soustavě, je dlouhý asi 4 000 km a hluboký až 7 km.
+Povrch je posetý krátery z dopadů meteoritů, například kráter Jezero, kde aktuálně operuje rover Perseverance.  
+            </ol>
+            <ol>
+            Atmosféra:
+Tenká atmosféra tvořená hlavně oxidem uhličitým (95 %), dusíkem (2,7 %) a argonem (1,6 %).
+Velmi nízký, přibližně 0,6 % atmosférického tlaku na Zemi.
+Atmosféra není dostatečně hustá, aby udržela tekutou vodu na povrchu.
+            </ol>
+            <ol>
+            Teplota a podmínky:
+Průměrná teplota je přibližně -60 °C, ale může se pohybovat od -140 °C na pólech až po 20 °C na rovníku během dne.
+Na povrchu dochází k častým prachovým bouřím, které mohou pokrýt celý Mars.
+            </ol>
+            <ol>
+            Led a voda:
+Mars má ledové čepičky na pólech složené z vody a zmrzlého oxidu uhličitého.
+Existují důkazy, že v minulosti na Marsu tekla tekutá voda – koryta řek, jezera a delty. Dnes je voda převážně ve formě 
+ledu pod povrchem nebo v atmosféře.
+            
+            </ol>
+            <ol>
+            Možnost života:
+Na Marsu zatím nebyl nalezen život, ale existují důkazy, že v minulosti mohl existovat. 
+Důkazy zahrnují známky starověkých řek, jezer a minerálů, které se tvoří za přítomnosti vody.
+            </ol>
+            </li>
+            </table>
+    </section>
+
+    <section class="box">
+        <h1>Jupitor</h1>
+        <table>
+            <li>
+            <ol>
+            Jupiter je pátá planeta od Slunce a největší planeta sluneční soustavy.
+            Je známý jako plynný obr díky své velikosti a složení.
+            </ol>
+            <ol>
+            Atmosféra:
+Hlavně vodík (90 %) a helium (10 %), s malým množstvím metanu, amoniaku, vodní páry a dalších prvků.
+Jupiter má charakteristické barevné pásy a víry způsobené rychlou rotací a konvekcí.
+Obrovský anticyklon (bouře), který existuje nejméně 350 let. Je větší než průměr Země.
+Jupiter má nádherné polární záře, které jsou způsobeny jeho magnetickým polem a interakcí se slunečním větrem.
+            </ol>
+            <ol>
+            Teplota a podmínky:
+Horní atmosféra: Teplota je asi -145 °C.
+Jádro: Odhaduje se, že teplota v jádru může dosahovat až 24 000 °C.
+Jupiter nemá pevný povrch – přechází z atmosféry do kapalného vodíku a nakonec do pevného nebo kapalného jádra.
+            </ol>
+            <ol>
+            Magnetické pole:
+Jupiter má nejsilnější magnetické pole ve sluneční soustavě, asi 14krát silnější než Země.
+            </ol>
+            <ol>
+            Význam a zajímavosti:
+Jupiter hraje důležitou roli v naší sluneční soustavě, protože jeho gravitační pole ovlivňuje dráhy asteroidů a komet.
+Je považován za „strážce Země“, protože často zachytí nebo odkloní objekty, které by jinak mohly narazit na naši planetu.
+Jupiter je viditelný pouhým okem a je po Měsíci a Venuši třetím nejjasnějším objektem noční oblohy.
+            </ol>
+            <ol>
+            Prstence:
+Jupiter má slabé prstence složené z prachu, které byly objeveny až sondou Voyager 1 v roce 1979.
+Jsou mnohem méně výrazné než prstence Saturnu.
+            </ol>
+            </li>
+            </table>
+    </section>
+
+    <section class="box">
+        <h1>Saturn</h1>
+        <table>
+            <li>
+            <ol>
+                Saturn je šestá planeta od Slunce a druhá největší planeta ve sluneční soustavě. 
+                Je známý především svými nádhernými prstenci, které jsou nejvýraznější ze všech planet.
+            </ol>
+            <ol>
+            Základní charakteristiky:
+Průměr- 120 536 km (9,5krát větší než Země).
+Hmotnost-5,68 × 10²⁶ kg (95krát větší než Země).
+Gravitace-10,44 m/s² (přibližně stejná jako na Zemi díky většímu průměru).
+Délka dne-10 hodin 33 minut (velmi rychlá rotace).
+Délka roku-29,5 pozemského roku (oběh kolem Slunce).
+            </ol>
+            <ol>
+            Atmosféra:
+
+Hlavně vodík (96 %) a helium (3 %), s malým množstvím metanu, amoniaku a dalších plynů.
+Podmínky: Saturn má extrémně větrnou atmosféru, s rychlostí větrů dosahující až 1 800 km/h.
+Mraky: V horní atmosféře se tvoří žluté a zlaté pásy tvořené ledovými krystaly amoniaku.
+            </ol>
+            <ol>
+            Teplota a podmínky:
+Průměrná teplota-Přibližně -139 °C.
+Saturn nemá pevný povrch. Pod atmosférou se nachází vrstva kapalného vodíku, která přechází do kovového vodíku a pravděpodobně malého skalnatého jádra.
+            </ol>
+            <ol>
+            Magnetické pole a gravitace:
+Saturn má silné magnetické pole, i když méně intenzivní než Jupiterovo.
+Magnetické pole generuje magnetosféru, která ovlivňuje měsíce a prstence kolem Saturnu.
+            </ol>
+            <ol>
+            Zajímavosti:
+Saturn je méně hustý než voda – kdyby existoval dostatečně velký oceán, Saturn by na něm plaval.
+Prstence Saturnu nejsou staré; odhaduje se, že vznikly asi před 100 miliony lety (možná z rozpadlého měsíce).
+Saturn je viditelný pouhým okem a byl znám již ve starověku. Je pojmenován po římském bohu zemědělství.
+            </ol>
+            </li>
+            </table>
+    </section>
+
+    <section class="box">
+        <h1>Uran</h1>
+        <table>
+            <li>
+            <ol>
+                Uran je sedmá planeta od Slunce a třetí největší planeta ve sluneční soustavě. Patří mezi ledové obry a je známý svou 
+                modrozelenou barvou, která je způsobena metanem v atmosféře. 
+                Uran má také jedinečný náklon osy, což způsobuje jeho zvláštní rotaci a extrémní roční období.
+            </ol>
+            
+            <ol>
+            Vnitřní složení:
+Uran nemá pevný povrch. Pod atmosférou se nachází hustá vrstva vody, amoniaku a metanu v kapalném stavu.
+Jádro je pravděpodobně malé a skalnaté.
+            </ol>
+            
+            <ol>
+            Atmosféra:
+Složení-Hlavně vodík (83 %), helium (15 %), a malé množství metanu (2 %).
+Barva-Modrozelený odstín je způsoben metanem, který absorbuje červené světlo.
+Teplota-Průměrná teplota je -224 °C, což z něj dělá nejchladnější planetu ve sluneční soustavě.
+V atmosféře se nacházejí občasné oblačné útvary a víry, ale je méně aktivní než Jupiter nebo Saturn.
+            </ol>
+            
+            <ol>
+            Magnetické pole:
+Magnetické pole Uranu je neobvyklé – jeho osa je skloněna o 59° vůči rotační ose planety.
+Toto pole je nepravidelné a neprochází středem planety, což je jedinečný rys mezi planetami.
+</ol>
+
+            <ol>
+            Zajímavosti:
+Uran byl objeven v roce 1781 Williamem Herschelem a byl první planetou objevenou dalekohledem.
+Je pojmenován po řeckém bohu nebes, Uranovi, otci Saturna.
+Uran je jednou z nejméně prozkoumaných planet ve sluneční soustavě, ale jeho unikátní vlastnosti ho činí velmi zajímavým pro vědce.
+            </ol>
+            
+            </li>
+            </table>
+    </section>
+
+    <section class="box">
+        <h1>Neptun</h1>
+        <table>
+            <li>
+            <ol>
+                Neptun je osmá a nejvzdálenější planeta od Slunce v naší sluneční soustavě. 
+                Je známa svou nádhernou modrou barvou a extrémním počasím, včetně nejsilnějších větrů v celé soustavě.
+                Patří mezi ledové obry a je pojmenována po římském bohu moří.
+            </ol>
+            
+            <ol>
+            Vnitřní složení:
+Neptun nemá pevný povrch.
+Jeho atmosféra přechází do vrstvy vody, amoniaku a metanu v kapalném nebo zmrzlém stavu.
+Jádro je pravděpodobně skalnaté a má hmotnost podobnou Zemi.
+            </ol>
+            
+            <ol>
+            Atmosféra:
+Složení-Vodík (80 %), helium (19 %), a malé množství metanu, který dává planetě její modrou barvu.
+Teplota-Průměrná teplota na Neptunu je -214 °C, což z něj činí jednu z nejchladnějších planet.
+Počasí-Neptun má extrémní bouře a větry, které dosahují rychlosti až 2 100 km/h, což jsou nejsilnější větry ve sluneční soustavě.
+</ol>
+
+            <ol>
+            Magnetické pole:
+Magnetické pole Neptunu je nakloněné o 47° vůči jeho rotační ose a není centrované na střed planety.
+Je velmi podobné magnetickému poli Uranu, což naznačuje podobný mechanismus jejich vzniku.
+            </ol>
+            
+            <ol>
+            Zajímavosti:
+Neptun byl objeven v roce 1846 Johannem Gallem na základě matematických předpovědí Urbaina Le Verriera a Johna Couch Adamse.
+Před objevením byl několikrát pozorován, ale zaměněn za hvězdu.
+Neptun je nejvzdálenější planeta od Slunce, ale díky svému vnitřnímu teplu vyzařuje více energie, než přijímá.
+</ol>
+</table>
+</section>
+
+<section class="box">
+    <h1>Pluto</h1>
+    <table>
+        <li>
+        <ol>
+            Pluto, kdysi považované za devátou planetu, je nyní klasifikováno 
+            jako trpasličí planeta. Nachází se v Kuiperově pásu, oblasti za oběžnou dráhou Neptunu, plné ledových těles a planetek.
+        </ol>
+        <ol>
+            Povrch a složení:
+        Povrch Pluta je pokryt dusíkovým ledem, s oblastmi metanu, oxidu uhelnatého a vody.
+        Nejslavnější útvar je Sputnik Planitia, obrovská rovina ze zmrzlého dusíku ve tvaru srdce.
+        Povrch vykazuje kombinaci světlých a tmavých oblastí, hor, kráterů a možná i ledových sopek (kryovulkánů).
+        Teplota na povrchu je extrémně nízká, okolo -229 °C.
+        </ol> 
+        <ol>
+        Atmosféra:
+Pluto má velmi řídkou atmosféru složenou převážně z dusíku, s menším množstvím metanu a oxidu uhelnatého.
+Atmosféra je dočasná a mění se podle vzdálenosti Pluta od Slunce – když je Pluto blíže ke Slunci, 
+jeho ledové povrchy sublimují a atmosféra zhoustne; když se vzdálí, atmosféra zmrzne a spadne zpět na povrch.
+        </ol>
+        <ol>
+        Historie objevu a status:
+Pluto bylo objeveno v roce 1930 astronomem Clydem Tombaughem.
+Až do roku 2006 bylo považováno za devátou planetu.
+V roce 2006 však Mezinárodní astronomická unie (IAU) vytvořila novou definici planety, kterou Pluto nesplnilo, a bylo přeřazeno mezi trpasličí planety.
+        </ol>
+        <ol>
+        Zajímavosti:
+Pluto je pojmenováno po římském bohu podsvětí. Název navrhla tehdy jedenáctiletá dívka Venetia Burneyová.
+Pluto má velmi nízkou hustotu, což naznačuje, že se skládá z přibližně dvou třetin kamene a jedné třetiny ledu.
+Je členem Kuiperova pásu, oblasti za Neptunem, kde se nachází mnoho dalších ledových těles a trpasličích planet.
+        </ol>
+        </li>
+        </table>
+    </section>
+</main>
+</body>
+</html>

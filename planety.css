@@ -1,0 +1,231 @@
+body {
+    height: 100vh;
+    background-color: #000;
+    background-image: url(https://4kwallpapers.com/images/wallpapers/solar-system-3840x2160-12831.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.action_btn {
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+    color: #fff;
+    scale: 1.05;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+.dropdown_menu {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    border-radius: 10px;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+@media(max-width: 992px) {
+    nav,
+    .action_btn {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+    
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+}
+
+@keyframes autoRun {
+    from{
+        transform: perspective(1000px) rotateX(-14deg) rotateY(0deg); 
+    }to{
+        transform: perspective(1000px) rotateX(-14deg) rotateY(360deg);
+    }
+}
+
+
+.banner .slider .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform:
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity))  * 1deg)) 
+        translateZ(550px);
+    
+}
+
+.banner .slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 10px;
+    animation: 3s linear infinite;
+}
+
+.box::before {
+    filter: blur(1.5rem);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient( from var(--angle),#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+@keyframes spin{
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.box {
+    padding: 4em;
+    border-radius: 10px;
+    margin: 25%;
+    width: 600px;
+    height: 500px;
+    position: relative;
+    background: #1c1f2b;
+    color: #fff;
+    display: flex;
+    margin-right: 130px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: cente;
+    text-align: center;
+    text-size-adjust: 500px;
+}
+
+
+
+#box-1 {
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+}

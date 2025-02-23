@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Vesmír</title>
+    <link rel="stylesheet" href="Vesmír.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Vesmír</a>
+        <nav>
+            <a href="Vesmír.html">Home</a>
+            <a href="planets.html" target="_blank">Planety</a>
+            <a href="dira.html" target="_blank">Černý díry</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </nav>
+        <a href="#" class="action_btn">Začít</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="Vesmír.html">Home</a></li>
+            <li><a href="planets.html" target="_blank">Planety</a></li>
+            <li><a href="dira.html">Černý díry</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="action_btn">Začít</a></li>
+        </div>
+    </header>
+<hr>
+    <main>
+        <section class="box">
+            <h1>Co to je vesmír?</h1>
+            <p>Vesmír či kosmos 
+                je souhrnné označení veškeré hmoty, energie a časoprostoru, který je obsahuje. Zahrnuje tedy hvězdy, planety,
+            galaxie, mezigalaktický prostor, temnou hmotu a další.
+            </p>
+        </section>
+        <section class="box">
+            <h1>Jak vznikla vesmír?</h1>
+            <p>
+                Dnes převládá teorie, že vesmír byl nejdříve v době tzv. velkého třesku extrémně horký a hustý a od té doby 
+                dochází k jeho 
+                rozpínání.
+            Na této teorii je založen takzvaný standardní model vesmíru, také zvaný model ΛCDM
+            </p>
+        </section>
+        <section class="box" id="box-1">
+            <h1>Kde začíná vesmír?</h1>
+            <p>
+Podle FAI (Mezinárodní letecké federace) je hranicí vesmírného prostoru vzdálenost 100 km od povrchu Země 
+tzv.
+Kármánova hranice. Do této hranice se hovoří o nadmořské výšce.
+                V případě Země do této hranice zasahují i další vrstvy její atmosféry
+                (termosféra a exosféra).
+            </p>
+            </section>
+        
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+        
+
+    </script>
+</body>
+</html>
